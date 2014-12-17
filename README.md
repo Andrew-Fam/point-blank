@@ -1,18 +1,27 @@
-point-blank
+*point-blank
 ===========
 
 Blank project with most used extensions and plugins for an efficient start
 
 
-Getting started
+**Getting started
 ===============
 
+*** Live browser test
+
+	To run live browser test, in the commandline (terminal), enter:
+
+		grunt
+
+	OPen a browser and go to http://localhost:9001/
 
 
+*** Bootstrap integration
 
-Common use cases
+	To add/remove bootstrap components, edit file /common/less/bootstrap/point-bootstrap.less
+
+**Common use cases
 ================
-
 
 1. Copy part of a file into a bigger file (for example, when building a module into a common template):
 

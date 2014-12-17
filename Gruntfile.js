@@ -116,7 +116,7 @@ module.exports = function(grunt) {
 			},
 			copy: {
 				files: ['common/**/*.*','templates/**/*.*'],
-				tasks: ['newer:copy','copy-part-of-file']
+				tasks: ['newer:copy']
 			}
 		},
 		concurrent: {
