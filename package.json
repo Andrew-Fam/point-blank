@@ -1,0 +1,22 @@
+{
+  "name": "point-blank",
+  "version": "0.0.1",
+  "description": "Blank project with most used extensions and plugins for an efficient start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Andrew-Fam/point-blank.git"
+  },
+  "author": "Andrew Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrew-Fam/point-blank/issues"
+  },
+  "homepage": "https://github.com/Andrew-Fam/point-blank",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
