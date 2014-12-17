@@ -4,26 +4,48 @@ point-blank
 Blank project with most used extensions and plugins for an efficient start
 
 
-Starts from scratch
-=============
+Getting started
+===============
 
 
-Create project folder
 
-	mkdir point-blank
-	cd point-blank
 
-Install grunt command line interface (CLI):
+Common use cases
+================
 
-	sudo npm install -g grunt-cli
 
-Init npm package control:
+1. Copy part of a file into a bigger file (for example, when building a module into a common template):
 
-	sudo npm init
+	Use grunt-copy-part-of-file
 
-Install grunt:
+	Example:
 
-	sudo npm install grunt --save-dev
+		'copy-part-of-file': {
+			copyPlatform: {
+			  options: {
+			      sourceFileStartPattern: '<!-- start-platform -->',
+			      sourceFileEndPattern: '<!-- end-platform -->',
+			      destinationFileStartPattern: '<!-- start-platform -->',
+			      destinationFileEndPattern: '<!-- end-platform -->'
+			  },	
+			  files: {
+			      '../public-page/templates/trade-platform.liquid': ['build/index.html']
+			  }
+			},
+			copyTradingActivityPopup: {
+				options: {
+			      sourceFileStartPattern: '<!-- trading-activity-popup -->',
+			      sourceFileEndPattern: '<!-- end-trading-activity-popup -->',
+			      destinationFileStartPattern: '<!-- trading-activity-popup -->',
+			      destinationFileEndPattern: '<!-- end-trading-activity-popup -->'
+			  },	
+			  files: {
+			      '../public-page/templates/trading-activity-popup.liquid': ['build/trading-activity-popup.html']
+			  }
+			}
+		},
+
+
 
 
 
