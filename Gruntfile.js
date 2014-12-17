@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: ['common/scripts/**/*.js'],
-				tasks: ['newer:concat:js','replace'],
+				tasks: ['newer:concat:js'],
 				options: {
 					livereload: true
 				}
@@ -129,5 +129,5 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask('default', ['sprite', 'newer:less', 'newer:concat', 'newer:liquid', 'newer:copy', 'replace','concurrent:all']);
+	grunt.registerTask('default', ['sprite', 'newer:less', 'newer:concat', 'newer:liquid', 'newer:copy', 'concurrent:all']);
 };

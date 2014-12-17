@@ -46,6 +46,23 @@ Common use cases
 		},
 
 
+2. Replace local assets url with production assets url:
+	
+	Use grunt-replace
+
+	Example: 
+
+		replace: {
+		  jsURL: {
+		    src: ['../public-page/public/trade-platform/scripts/highlow-main.js'],
+		    overwrite: true,                 // overwrite matched source files
+		    replacements: [{
+		      from: 'common/images',		      
+		      to: "public/trade-platform/images"
+		    }]
+		  }
+		}
+
 
 
 
