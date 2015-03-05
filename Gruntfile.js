@@ -37,10 +37,10 @@ module.exports = function(grunt) {
 			},
 			js: {
 				src: [
-					'common/scripts/src/main-base.js',
-					'common/scripts/src/component/*.js'
+					'common/scripts/src/point.base.js',
+					'common/scripts/src/point-components/*.js'
 				],
-				dest: 'common/scripts/point-main.js'
+				dest: 'common/scripts/point.main.js'
 			}
 		},
 		liquid: {
